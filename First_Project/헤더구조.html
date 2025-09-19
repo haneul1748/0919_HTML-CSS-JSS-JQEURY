@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더구조</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        header,
+        div,
+        a {
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 1000px;
+            height: 160px;
+        }
+
+        #headerbar {
+            width: 100%;
+            height: 100%;
+            color: black;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /*점지우기*/
+            display: flex;
+            font-size: 40px;
+            font-family: "Dongle", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        #header a {
+            display: block;
+        }
+
+        #headerbar>li {
+            height: 100%;
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        #headerbar>li>a {
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            /*밑줄지우기*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #headerbar>li>ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+
+        #headerbar>li>ul a {
+            text-decoration: none;
+        }
+
+        #headerbar>li>a:hover+ul {
+            display: block;
+        }
+
+        #headerbar>li>ul:hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="headerbar">
+            <li>
+                <a href='#' id="H">About</a>
+            </li>
+            <li>
+                <a href='#' id="H">Backend</a>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href='#' id="H">Frontend</a>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href='#' id="H">Design</a>
+                <ul>
+                    <li><a href="#">UX/UI</a></li>
+                    <li><a href="#">WEB</a></li>
+                    <li><a href="#">Logo/Business Card</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href='#' id="H">Tech Stack</a>
+            </li>
+            <li>
+                <a href='#' id="H">Contact</a>
+            </li>
+        </div>
+    </header>
+</body>
+
+</html>

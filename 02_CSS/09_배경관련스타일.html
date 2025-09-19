@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백그라운드</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        #bg-color {
+            border: 30px solid blue;
+            padding: 30px;
+            background-color: skyblue;
+            /* div요소의 content영역 가로길이를 부모요소의 50%로 지정 */
+            width: 50%;
+            box-sizing: border-box;
+            /* 가로길이설정을 border영역까지 포함 */
+        }
+
+        #bg-image {
+            border: 1px solid red;
+            width: 70%;
+            height: 800px;
+            background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAngMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIEBQYDBwj/xAAxEAACAgIBBAECBQMDBQAAAAABAgADBBEFBhIhMUETUQcUMnGRIiNhQlKBJDM0Q2L/xAAZAQACAwEAAAAAAAAAAAAAAAAABAECAwX/xAAgEQACAgIDAQEBAQAAAAAAAAAAAQIRAwQSMUEhMlEU/9oADAMBAAIRAxEAPwDnqAHmO1DU41nCHVjzO6zkhnQGFlkdBJNB1Im51pfzGMUyk0WIO4sZWRoR243ZkLCEDJAIH1AxjGUnLiSlYjGMJikxs5eabbGYoQmMLajpzaLr6XF74hsnMmNLS/Eizp379xpaM3E3Cgsi7huM8xRNzAeDFDRgjgYMlM6Bo5W0ZzEWClRbssKbNj3OweVtTlTO4t3G45fhm4k0NuPkOt/MkB/E1jOyrQ8mMYwLRpMW2Mn8NIRCJCEQbs2oQxpXcdCQBHsTU5NJVvqcGEuiGce6L3RxWN1JAiGAjHdR8yBn5/0QErUvY36QJvGLl0ZQi5OkWgMNykrp5tj9T6Xj7Tqmbl45/wCrx3A37AmrwSSGJauReFwvmPEqRzmIq/1MQftOb8ll5ZC4OO3n/URKLDNkQwzfhcs61jbED9zI9nKYlIJe5T+0iV9P5+Zpsu8r/wDIllidL4VG+9e/f3m0dX+sajqP0gN1HiIAydzf8R69T0H/ANb/AMS7Xh8FRoULOy4GKg0tKfxNliii70oFCOqMYaDI4/cSVRz+Dbr+6FP+ZY28ZiWDTUJ/EiWdO4Dj/tAftKZNeMg/xx8ZKqyKrV7kdWB9eZ0B36lFk9NOp3hZDIB6EjVjmePO3/vIPjXmKz05L6mZy1pLo00JQpz1h0rYlncff9MfkZXI3AjHxyu/RIma1sj8M1hm/C4t1ryZG7h9xK3H4rk8gbycjs/aSH4S9Kj9LJYv8TZakvWaf5ZMkk+IhlLiZ2RiZX5XOBBP6WMud/aYTxuDpi8oODpmbtyu32YvTS/nuXexhtUlUzFjs7l90BWH5aypm13zoYopM11UlP6bEAAa0Iyyiq0EWIpH7S1y+MeodyeRK8jR1NzqFS/A4D2d5pXcsKceqlQtaBQPsJ11CABr7QhCBIQhCABCEIAEQgEeRFhABn0q97+mv8RwA+0WEADxCORC50o3JScdew3rQgQYrrQJWtFygCwOPMm4h7sasn2VBMreqrfzPLVYI/qFbbaT0bsRVX0BE9r60jnbklyoxs74d12Fm1ZOMT3I2yB9px7SDoybhptg01b4/RWM3F2el8P1fx+dUtOQ/wBO7WiG8bjcvsN7Gs7U+p5p+X/M8zTXWCNHZInodS9laqfgTaMuSs62GbnG2OhCVd/O4FGUMey0fUPxuSalpFjVZXUMp2CI4bPgQJEhHitm9KYjI6+xrUAGwhE2PkwAWEQMp/SdxYEWEIQgSTeOyKMfusvYKo9kyv53rOlano4wiywjQYepH5Sk5GBbWpIJB9TGcEgRraXALqx8mVnLirF883CNonYOO7O2Tkf1XudkydADUWJN8nbOPKTk7ZQtQp+J0qUVqZPGP49SJyafSxHYePE15J/Cyi2yR0pQt+XdlMNgHQmvlH0jjGnjFZvb+ZeD9jGUqR28ceMUiNyLtXh2unsL4niWZkXW8sXZm7g894/LNepQISD4lHX+HFFueMh10vdsiWXwlomdMC3K42gFTsqNzW4nGJWCbBszpxnG04FK11qAAPiV3VXVOHwNBNzg268LIBsu1orA8KP4jbcWq1dFBuePt+LOSMnxUPpTedJdaYfPoqhgt/8Ask8WVsk8jgGhu5PKzC9c8xZxuIEpbtd/kT1m+sW1lDqeYfiN03fmUd+OhZk8jUEWu0ZXoXnczI5A032F1InpQ9Tz3obp3LxMr8zkp2AeNGehCDBBCAhILAda8zD3gY3UVlYGhZ5m41uYzqOk185RaD4YSsujDOrxssYsQeobiJxTqF8Sr59O7GRP9zASbjZdd4/oPqQ+ePbXUx9BxuTjTU0mMYv2jS8XSKcKmtfhZoeO44WDvs9e5U8Mq3rTryCBNhUgRAoGtR8642uhK/0gCdNaiwgQJPIfxZ6dzsnJ/O0hnrA8gfE9e3IfIZGFXUVzXQK3jTSUwZ8rDHuD9n037h8ano34WdOZ55Fc51aqoefI1ubvIo6Urs+vqksT8DcvuO5HiVpVce2tF14G9SXJEcWi2HoRltVdqkOoP/Ecrq6gowIP2iypJX2cVS3oaP8AiRLuH1so25eQgSZG6iylyHBnKanMxUvrbx5mavqNVhUj1AmznMZ1k5HKYeps5jeq0+rzOKo9jzIl0zPL+GT032Df2hHqNKBDtiFnEoqeEqJHd8SXz1BuwW1slfM48MxWjzLB7AylT6PxL5JNZLNIyp2WnQmaL8etWJ7l8Hc3y/pnjHF578Fy+3J+jYf4nr/H5SZWKlqEEMN7jido68JqUbRKiCLCBYQzy7r035fUNOIljCsj1v8AzPUTPPOuMR8LmaOSA3XvRIHqD6dGmNrmrHcd09iU0AWp3n53G8pxGNViWWUlq2Ue1MtsTMpycdbUsUgj7ys57PQ1/k6j322+AFiMObkdfIsahZYfhzk3ZHHv9Z2ftbQJmwlT0zxycbxldarpiPMto+zieiwhCACH1M/zSBbtiaAzOcvaLLyoPqBKK9jobmKssOb1C52Stfqabm84YODZZ/qI0soOBx+2pr7B/XYd+ZlmlxiL7M6jRa9nmLqLDxEDmFLiL9OoCdi32nMeBoQJm/bsg4Z+OmTSe4bYDwZr/wANeQsvw3xbN91R15mUubtrY/YTR/hbUxTJyCPDNoGMYRzUbto9DhEEWaD4SJyGDRyFDU5CBlPxJRhJAxb9Eulu8bLeurf6Jb8Z01i4di3P/ct1+ppexZFIs5N/BANDUIsIFRBFhCAEbOyBRUT8mZe1+9yx+ZZc1axtC/AlWZJZGO5y58/mEwwf7dfky2rQIiqB4AlJnd2N1MSSNPLwfeJ7F8jmbV86YsWJCLixURIQjBVnHM/8Z/2m7/DVFXgQQPJaEJvi6Y9p9M10WEJoPhEEIQIFhCEADXmEIQAIQhADPc2AMgGVsISSyMn1eoTJxrVGn7tblhWd1r+whCK7Hhztz9DosIRQUP/Z);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+
+        .test {
+            border: 10px dashed;
+            margin: 40px;
+            padding: 40px;
+            background-color: palegreen;
+        }
+
+        #div1 {
+            background-clip: border-box;
+        }
+
+        #div2 {
+            background-clip: padding-box;
+        }
+
+        #div3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>배경관련 스타일(background-)</h1>
+
+    <h3>background-color: 배경색을 지정할 수 있는 스타일 속성</h3>
+
+    <div id="bg-color">
+        웃을 수 있을 때 언제든 웃어라. 꽁짜 보약이다.
+    </div>
+
+    <h3>배경으로 이미지 넣기</h3>
+
+    <pre>
+        [ 표현법 ]
+        선택자 {
+            background-image: url(이미지경로);
+            background-repeat: repeat / repeat-x / repeat-y / no-repeat
+            background-size : auto / contain / cover / 숫자(px/%)
+            background-position: left / right / center;
+                                 top / bottom / center;
+            background-attachment: scroll / fixed;
+        }
+    </pre>
+
+    <div id="bg-image"></div>
+
+    <h3>background-clip: 배경을 적용하고자하는 범위를 지정할 때</h3>
+
+    <pre>
+        [ 표현법 ]
+
+        선택자{
+            background-clip: border-box / padding-box / content-box
+        }
+    </pre>
+
+    <div id="div1" class="test">인간은 인생의 방향을 결정할 규칙을 가지고 있어야 한다</div>
+    <div id="div2" class="test">인간은 인생의 방향을 결정할 규칙을 가지고 있어야 한다</div>
+    <div id="div3" class="test">인간은 인생의 방향을 결정할 규칙을 가지고 있어야 한다</div>
+    <!-- 
+    
+
+    
+    
+    
+    
+    -->
+
+
+</body>
+
+</html>

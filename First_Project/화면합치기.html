@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 구조</title>
+    <link rel="stylesheet" href="resources/css/footer.css" />
+    <link rel="stylesheet" href="resources/css/header.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+    <style>
+        div,
+        header,
+        nav,
+        main,
+        footer {
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+        }
+
+        #wrap {
+            width: 1000px;
+            height: 800px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            flex: 1;
+        }
+
+        nav {
+            flex: 1;
+        }
+
+        main {
+            flex: 5;
+        }
+
+        footer {
+            flex: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+            <header>
+        <div id="headerbar">
+            <li>
+                <a href='#' id="H">About</a>
+            </li>
+            <li>
+                <a href='#' id="H">Backend</a>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href='#' id="H">Frontend</a>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href='#' id="H">Design</a>
+                <ul>
+                    <li><a href="#">UX/UI</a></li>
+                    <li><a href="#">WEB</a></li>
+                    <li><a href="#">Logo/Business Card</a></li>
+                    <li><a href="#">CONTENT</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href='#' id="H">Tech Stack</a>
+            </li>
+            <li>
+                <a href='#' id="H">Contact</a>
+            </li>
+        </div>
+    </header>
+        <nav></nav>
+        <main></main>
+        <footer>
+            <div id="footer_size">
+                <div id="footer_1">
+                    <a href="#">About</a>
+                    <a href="#">Backend</a>
+                    <a href="#">Frontend</a>
+                    <a href="#">Design</a>
+                    <a href="#">Tech Stack</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div id="footer_2">
+                    <p id="p_1">
+                        COMPANY INFO | 대표자 | 김하늘
+                        <br /> 주소 | 서울특별시 송파구 백제고분로 15길 26
+                        <br /> 이메일 | nosaru@naver.com
+                        <br /> TEL: 02-0000-0000 | FAX: 02-0000-0000
+                    </p>
+                    <p id="p_2">BUSINESS INFO | 사업자 등록번호 | 000-00-00000
+
+                    </p>
+                </div>
+                <div id="footer_3">
+                    <p>
+                        <img src="resources/image/flutter.png" alt="Stack" height="40" width="40">
+                        <img src="resources/image/mysql.png" alt="Stack" height="40" width="40">
+                        <img src="resources/image/pngwing.com (3).png" alt="Stack" height="40" width="40">
+                        <img src="resources/image/react.png" alt="Stack" height="40" width="40">
+                        <img src="resources/image/css.png" alt="Stack" height="40" width="40">
+                    </p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
